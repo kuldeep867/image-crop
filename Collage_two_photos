@@ -1,0 +1,25 @@
+#Task:- Create a collage of two images
+
+import cv2
+import numpy
+a=cv2.imread('first_img.jpg')
+b=cv2.imread('sec_img.jpg')
+
+cv2.imshow("ab" , a)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+#note the shape of both image should be the same
+
+a.shape
+b.shape
+
+cv2.imshow("ab" , b)
+cv2.waitKey()
+cv2.destroyAllWindows()
+
+c=numpy.hstack((a,b))
+
+cv2.imshow("ab" , c)
+cv2.waitKey()
+cv2.destroyAllWindows()
